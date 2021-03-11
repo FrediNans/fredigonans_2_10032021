@@ -1,0 +1,65 @@
+@font-face
+{
+    font-family: 'Raleway';
+    src: url(police/Raleway-Italic-VariableFont_wght.ttf);
+    src: url(police/Raleway-VariableFont_wght.ttf);
+}
+body
+{
+    font-family: 'Raleway',Arial, Helvetica, sans-serif ;
+}
+header
+{
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+    margin: 0px 50px;
+    height: 130px;
+}
+nav ul
+{
+       
+}
+nav li
+{
+    display: inline;
+    list-style-type: none;
+}
+.ancre
+{
+    padding: 34px;
+}
+.ancre:link
+{
+    color: black;
+    text-decoration: none;
+}
+.ancre:visited
+{
+    color: black;
+}
+.ancre:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+#log
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: #0065FC;
+    padding-left: 34px;
+}
+#log:hover
+{
+    text-decoration: underline;
+}
+
+
+   
+
+
+    
+
+
