@@ -3,6 +3,10 @@
 		<head>
 			<meta charset="utf-8" />
             <link rel="stylesheet" href="style.css" />
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/da14dfdb28.js" crossorigin="anonymous"></script>
 			<title>Reservia</title>
 		</head>
 		<body> 
@@ -16,12 +20,56 @@
                     </ul>
                 </nav>	
             </header>
+            <section class="recherche"> <!--Bloc "recherche"-->
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+                <table>
+                    <tr>
+                        <td id="iconebarre"><i class="fas fa-map-marker-alt"></i></td>
+                        <td><input type="search" id="destination" name="q"></td>
+                        <td><button id="bouttonrecherche">Rechercher</button></td>
+                    </tr>
+                    
+                </table>
+            </section>
+            <section class="filtres"> <!--bouton de filtre realiser sur le site https://proto.io/freebies/onoff/-->
+                <p>Filtres</p>
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0">
+                    <label class="onoffswitch-label" for="myonoffswitch">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch" id="iconefiltre"><i class="fas fa-money-bill-wave" ></i></span>
+                    </label>
+                </div>
+                <div class="onoffswitch2">
+                    <input type="checkbox" name="onoffswitch2" class="onoffswitch-checkbox2" id="myonoffswitch2" tabindex="0">
+                    <label class="onoffswitch-label2" for="myonoffswitch2">
+                        <span class="onoffswitch-inner2"></span>
+                        <span class="onoffswitch-switch2" id="iconefiltre2"><i class="fas fa-child"></i></span>
+                    </label>
+                </div>
+                <div class="onoffswitch3">
+                    <input type="checkbox" name="onoffswitch3" class="onoffswitch-checkbox3" id="myonoffswitch3" tabindex="0">
+                    <label class="onoffswitch-label3" for="myonoffswitch3">
+                        <span class="onoffswitch-inner3"></span>
+                        <span class="onoffswitch-switch3" id="iconefiltre3"><i class="fas fa-heart"></i></span>
+                    </label>
+                </div>
+                <div class="onoffswitch4">
+                    <input type="checkbox" name="onoffswitch4" class="onoffswitch-checkbox4" id="myonoffswitch4" tabindex="0">
+                    <label class="onoffswitch-label4" for="myonoffswitch4">
+                        <span class="onoffswitch-inner4"></span>
+                        <span class="onoffswitch-switch4" id="iconefiltre4"><i class="fas fa-dog"></i></span>
+                    </label>
+                </div>
+            </section>
+            
+            
 			<section> <!--Bloc "Hébergements"-->
+                <h1 id="Hébergements">Hébergements à Marseille</h1> <!--Ajout id pour ancre header-->  
+                
                 <p>
-                    <h1 id="Hébergements">Hébergements à Marseille</h1> <!--Ajout id pour ancre header-->  
-                </p>
-                <p>
-
+                    
                 </p>
                 
 

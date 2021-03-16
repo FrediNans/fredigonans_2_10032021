@@ -1,12 +1,11 @@
-@font-face
-{
-    font-family: 'Raleway';
-    src: url(police/Raleway-Italic-VariableFont_wght.ttf);
-    src: url(police/Raleway-VariableFont_wght.ttf);
-}
 body
 {
     font-family: 'Raleway',Arial, Helvetica, sans-serif ;
+    font-size: 100%;
+    max-width: 1440px;
+    margin: auto;
+   
+    
 }
 header
 {
@@ -14,12 +13,7 @@ header
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-    margin: 0px 50px;
     height: 130px;
-}
-nav ul
-{
-       
 }
 nav li
 {
@@ -55,11 +49,258 @@ nav li
 {
     text-decoration: underline;
 }
+                                                                /* bloc recherche */  
+#iconebarre
+{   
+    width: 50px;
+    height: 50px;
+    background-color: #F2F2F2;
+    text-align: center;
+    border-radius: 13px 0 0 13px;   
+}   
+#destination 
+{
+    height: 50px;
+    width: 224px;
+    background-color: transparent;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+} 
+#bouttonrecherche
+{
+    height: 50px;
+    width: 134px;
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 0px 13px 13px 0;
+    border: 1px solid #0065FC;
+    transition: 200ms;
+}
+#bouttonrecherche:hover
+{
+    cursor: pointer;
+    background: linear-gradient( #0065FC, #438af5)
+    
+}
 
-
-   
-
-
+                                                                /* fin bloc recherche */
+                                                                /* test bouton coulissant*/
+.filtres
+{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
     
 
+}
+.filtres p
+{
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 32px;
+}
+#iconefiltre, #iconefiltre2, #iconefiltre3, #iconefiltre4
+{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 14px;
+    color: #0065FC;
+    border-color: #DEEBFF;
+}
 
+.onoffswitch {
+    position: relative; width: 192px;
+    margin-right: 32px;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #F2F2F2; border-radius: 50px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 50px; padding: 0; line-height: 50px;
+    font-size: 16px; color: white; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Économique";
+    padding-left: 21px;
+    background-color: #0065FC; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "Économique";
+    padding-right: 21px;
+    background-color: #FFFFFF; color: #000000;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 48px; margin: 0px;
+    background: #DEEBFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 138px;
+    border: 2px solid #DEEBFF; border-radius: 48px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+/*filtre 2*/
+.onoffswitch2 {
+    position: relative; width: 150px;
+    margin-right: 32px;
+}
+.onoffswitch-checkbox2 {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label2 {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #F2F2F2; border-radius: 50px;
+}
+.onoffswitch-inner2 {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner2:before, .onoffswitch-inner2:after {
+    display: block; float: left; width: 50%; height: 50px; padding: 0; line-height: 50px;
+    font-size: 16px; color: white; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner2:before {
+    content: "Familial";
+    padding-left: 19px;
+    background-color: #0065FC; color: #FFFFFF;
+}
+.onoffswitch-inner2:after {
+    content: "Familial";
+    padding-right: 19px;
+    background-color: #FFFFFF; color: #000000;
+    text-align: right;
+}
+.onoffswitch-switch2 {
+    display: block; width: 48px; margin: 0px;
+    background: #DEEBFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 96px;
+    border: 2px solid #DEEBFF; border-radius: 48px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox2:checked + .onoffswitch-label2 .onoffswitch-inner2 {
+    margin-left: 0;
+}
+.onoffswitch-checkbox2:checked + .onoffswitch-label2 .onoffswitch-switch2 {
+    right: 0px; 
+}
+/*filtre 3*/
+.onoffswitch3 {
+    position: relative; width: 184px;
+    margin-right: 32px;
+ 
+}
+.onoffswitch-checkbox3 {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label3 {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #F2F2F2; border-radius: 50px;
+}
+.onoffswitch-inner3 {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner3:before, .onoffswitch-inner3:after {
+    display: block; float: left; width: 50%; height: 50px; padding: 0; line-height: 50px;
+    font-size: 16px; color: white; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner3:before {
+    content: "Romantique";
+    padding-left: 21px;
+    background-color: #0065FC; color: #FFFFFF;
+}
+.onoffswitch-inner3:after {
+    content: "Romantique";
+    padding-right: 21px;
+    background-color: #FFFFFF; color: #000000;
+    text-align: right;
+}
+.onoffswitch-switch3 {
+    display: block; width: 50px; margin: 0px;
+    background: #DEEBFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 130px;
+    border: 2px solid #F2F2F2; border-radius: 50px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox3:checked + .onoffswitch-label3 .onoffswitch-inner3 {
+    margin-left: 0;
+}
+.onoffswitch-checkbox3:checked + .onoffswitch-label3 .onoffswitch-switch3 {
+    right: 0px; 
+}
+/*filtre 4*/
+.onoffswitch4 {
+    position: relative; width: 235px;
+}
+.onoffswitch-checkbox4 {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label4 {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #F2F2F2; border-radius: 50px;
+}
+.onoffswitch-inner4 {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner4:before, .onoffswitch-inner4:after {
+    display: block; float: left; width: 50%; height: 50px; padding: 0; line-height: 50px;
+    font-size: 16px; color: white; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner4:before {
+    content: "Animaux autorisés";
+    padding-left: 24px;
+    background-color: #0065FC; color: #FFFFFF;
+}
+.onoffswitch-inner4:after {
+    content: "Animaux autorisés";
+    padding-right: 24px;
+    background-color: #FFFFFF; color: #000000;
+    text-align: right;
+}
+.onoffswitch-switch4 {
+    display: block; width: 50px; margin: 0px;
+    background: #DEEBFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 181px;
+    border: 2px solid #F2F2F2; border-radius: 50px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox4:checked + .onoffswitch-label4 .onoffswitch-inner4 {
+    margin-left: 0;
+}
+.onoffswitch-checkbox4:checked + .onoffswitch-label4 .onoffswitch-switch4 {
+    right: 0px; 
+}
