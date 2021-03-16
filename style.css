@@ -1,105 +1,102 @@
-body
-{
+body {
     font-family: 'Raleway',Arial, Helvetica, sans-serif ;
     font-size: 100%;
-    max-width: 1440px;
-    margin: auto;
-   
-    
+    /*max-width: 1440px;*/
+    margin: 0; 
+    padding: 0px 50px;  
 }
-header
-{
+.head-top {
     display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
     height: 130px;
 }
-nav li
-{
-    display: inline;
-    list-style-type: none;
+.menu-top {
+    display: flex;
+    justify-content: right;
 }
-.ancre
-{
+.ancre {
     padding: 34px;
 }
-.ancre:link
-{
+.ancre:link {
     color: black;
     text-decoration: none;
 }
-.ancre:visited
-{
+.ancre:visited {
     color: black;
 }
-.ancre:hover
-{
+.ancre:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
 }
-#log
-{
+.sign-in {
     text-decoration: none;
     font-weight: bold;
     color: #0065FC;
     padding-left: 34px;
+    padding-top: 34px;
 }
-#log:hover
-{
+.sign-in:hover {
     text-decoration: underline;
 }
-                                                                /* bloc recherche */  
-#iconebarre
-{   
-    width: 50px;
+                                                                                                /* bloc recherche */  
+.barrerecherche {
+    display: flex;
+    justify-content: left;
     height: 50px;
-    background-color: #F2F2F2;
-    text-align: center;
-    border-radius: 13px 0 0 13px;   
-}   
-#destination 
-{
-    height: 50px;
-    width: 224px;
-    background-color: transparent;
-    border-left: none;
-    border-right: none;
-    border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2;
-} 
-#bouttonrecherche
-{
-    height: 50px;
-    width: 134px;
-    background-color: #0065FC;
-    color: white;
-    font-weight: bold;
-    font-size: medium;
-    border-radius: 0px 13px 13px 0;
-    border: 1px solid #0065FC;
-    transition: 200ms;
 }
-#bouttonrecherche:hover
-{
+.barrerecherche i {
+    max-height: 50px;
+    width: 50px;
+    background-color: #F2F2F2;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 13px;
+    border:2px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+.barrerecherche input {
+    max-height: 50px;
+    width: 234px;
+    padding-left: 10px;
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-left: 2px solid #F2F2F2;
+    border-right: 2px solid #0065FC;
+}
+.barrerecherche input::placeholder {
+    color: black;
+    font-size: medium;
+    padding-left: 10px;
+}
+.barrerecherche button {
+    width: 134px;
+    max-height: 50px;
+    background-color: #0065FC;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: 2px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+}
+.barrerecherche button:hover {
     cursor: pointer;
-    background: linear-gradient( #0065FC, #438af5)
-    
+    background: linear-gradient( #0065FC, #438af5)     
 }
 
-                                                                /* fin bloc recherche */
-                                                                /* test bouton coulissant*/
-.filtres
-{
+
+                                                                                                /* fin bloc recherche */
+                                                                                                /* bloc filtres*/
+.filtres {
     margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: left;
-    
-
 }
-.filtres p
-{
+.filtres h3{
     font-weight: bold;
     font-size: 16px;
     margin-right: 32px;
@@ -112,24 +109,24 @@ nav li
     color: #0065FC;
     border-color: #DEEBFF;
 }
-
-.onoffswitch {
-    position: relative; width: 192px;
-    margin-right: 32px;
-}
-.onoffswitch-checkbox {
+.onoffswitch-checkbox, .onoffswitch-checkbox2, .onoffswitch-checkbox3, .onoffswitch-checkbox4 {
     position: absolute;
     opacity: 0;
     pointer-events: none;
 }
-.onoffswitch-label {
+.onoffswitch-label, .onoffswitch-label2, .onoffswitch-label3, .onoffswitch-label4 {
     display: block; overflow: hidden; cursor: pointer;
     border: 2px solid #F2F2F2; border-radius: 50px;
-}
-.onoffswitch-inner {
+}.onoffswitch-inner, .onoffswitch-inner2, .onoffswitch-inner3, .onoffswitch-inner4 {
     display: block; width: 200%; margin-left: -100%;
     transition: margin 0.3s ease-in 0s;
 }
+                                                                                                /*filtre1*/
+.onoffswitch {
+    position: relative; width: 192px;
+    margin-right: 32px;
+}
+
 .onoffswitch-inner:before, .onoffswitch-inner:after {
     display: block; float: left; width: 50%; height: 50px; padding: 0; line-height: 50px;
     font-size: 16px; color: white; font-weight: bold;
@@ -160,23 +157,10 @@ nav li
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
     right: 0px; 
 }
-/*filtre 2*/
+                                                                                                /*filtre 2*/
 .onoffswitch2 {
     position: relative; width: 150px;
     margin-right: 32px;
-}
-.onoffswitch-checkbox2 {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-}
-.onoffswitch-label2 {
-    display: block; overflow: hidden; cursor: pointer;
-    border: 2px solid #F2F2F2; border-radius: 50px;
-}
-.onoffswitch-inner2 {
-    display: block; width: 200%; margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
 }
 .onoffswitch-inner2:before, .onoffswitch-inner2:after {
     display: block; float: left; width: 50%; height: 50px; padding: 0; line-height: 50px;
@@ -208,24 +192,10 @@ nav li
 .onoffswitch-checkbox2:checked + .onoffswitch-label2 .onoffswitch-switch2 {
     right: 0px; 
 }
-/*filtre 3*/
+                                                                                                /*filtre 3*/
 .onoffswitch3 {
     position: relative; width: 184px;
     margin-right: 32px;
- 
-}
-.onoffswitch-checkbox3 {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-}
-.onoffswitch-label3 {
-    display: block; overflow: hidden; cursor: pointer;
-    border: 2px solid #F2F2F2; border-radius: 50px;
-}
-.onoffswitch-inner3 {
-    display: block; width: 200%; margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
 }
 .onoffswitch-inner3:before, .onoffswitch-inner3:after {
     display: block; float: left; width: 50%; height: 50px; padding: 0; line-height: 50px;
@@ -257,22 +227,9 @@ nav li
 .onoffswitch-checkbox3:checked + .onoffswitch-label3 .onoffswitch-switch3 {
     right: 0px; 
 }
-/*filtre 4*/
+                                                                                                /*filtre 4*/
 .onoffswitch4 {
     position: relative; width: 235px;
-}
-.onoffswitch-checkbox4 {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-}
-.onoffswitch-label4 {
-    display: block; overflow: hidden; cursor: pointer;
-    border: 2px solid #F2F2F2; border-radius: 50px;
-}
-.onoffswitch-inner4 {
-    display: block; width: 200%; margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
 }
 .onoffswitch-inner4:before, .onoffswitch-inner4:after {
     display: block; float: left; width: 50%; height: 50px; padding: 0; line-height: 50px;
@@ -303,4 +260,65 @@ nav li
 }
 .onoffswitch-checkbox4:checked + .onoffswitch-label4 .onoffswitch-switch4 {
     right: 0px; 
+}
+                                                                                                /*ligne info*/
+#ligneinfo
+{
+    
+    margin-top: 43px;
+}
+#ligneinfo i
+{
+    
+    height: 22px;
+    max-height: 22px;
+    width: 26px;
+    max-width: 26px;
+    text-align: center;
+    color:#0065FC;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    margin-right: 18px;
+    padding-top: 5px;
+}
+                                                                                                /*fin ligne info*/
+                                                                                                /*fin bloc filtre*/
+                                                                                                /*bloc hébergement*/
+.hebergement div figure
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 200px;
+    border: 4px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.hebergement div figure img
+{
+    
+    width: 100%;
+    height: auto;
+    
+}
+.hebergement div figure figcaption
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    font-size: medium;  
+    width: 100%;
+    max-height: 40%;
+    
+    background-color: #FFFFFF;
+    margin-left: 10px;
+}
+.rate 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    color: #0065FC;
 }

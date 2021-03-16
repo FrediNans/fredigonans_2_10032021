@@ -10,30 +10,29 @@
 			<title>Reservia</title>
 		</head>
 		<body> 
-            <header>
+
+            <header class="head-top">
                 <img src="image/logo/Reservia-3x.png" alt="logo " class="logo" />
-                <nav>
-                    <ul>
-                        <li><a class="ancre" href="#hebergements">Hébergements</a></li>
-                        <li><a class="ancre" href="#activites">Activités</a></li>
-                        <li><a id="log" href="#">S'inscrire</a></li>
-                    </ul>
-                </nav>	
+                <nav class="menu-top">
+                        <a class="ancre" href="#hebergements">Hébergements</a>
+                        <a class="ancre" href="#activites">Activités</a>
+                        <a class="sign-in" href="#">S'inscrire</a>  
+                </nav>              	
             </header>
-            <section class="recherche"> <!--Bloc "recherche"-->
+            <!--Bloc "recherche"-->
+            <section class="recherche"> 
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
-                <table>
-                    <tr>
-                        <td id="iconebarre"><i class="fas fa-map-marker-alt"></i></td>
-                        <td><input type="search" id="destination" name="q"></td>
-                        <td><button id="bouttonrecherche">Rechercher</button></td>
-                    </tr>
-                    
-                </table>
+                <p class="barrerecherche">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="search"  name="q" placeholder="Marseille, France">
+                    <button>Rechercher</button>
+                </p>
+                
             </section>
-            <section class="filtres"> <!--bouton de filtre realiser sur le site https://proto.io/freebies/onoff/-->
-                <p>Filtres</p>
+            <!--bouton de filtre realiser sur le site https://proto.io/freebies/onoff/-->
+            <section class="filtres"> 
+                <h3>Filtres</h3>
                 <div class="onoffswitch">
                     <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0">
                     <label class="onoffswitch-label" for="myonoffswitch">
@@ -62,22 +61,42 @@
                         <span class="onoffswitch-switch4" id="iconefiltre4"><i class="fas fa-dog"></i></span>
                     </label>
                 </div>
-            </section>
-            
-            
-			<section> <!--Bloc "Hébergements"-->
-                <h1 id="Hébergements">Hébergements à Marseille</h1> <!--Ajout id pour ancre header-->  
                 
-                <p>
+            </section>  
+            <!--Ligne info-->
+                    <p id="ligneinfo"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            <!--Bloc "Hébergements"-->
+			<section class="hebergement"> 
+                <h1 id="Hébergements">Hébergements à Marseille</h1> <!--Ajout id pour ancre header-->  
+                <div>
+                    <figure>
+                        <img src="image/hébergement/aubergelacannebiere.jpg" alt="Auberge la Cannebière">
+                        <figcaption>
+                            <h4>Auberge la Cannebière</h4>
+                            <p>Nuit à partir de <span class="tarif">25€</span></p> 
+                            <span class="rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            
+                        </figcaption>
+                    </figure>
+
                     
-                </p>
+                </div>
+               
                 
 
 			</section>
-            <article> <!--Bloc "Les plus populaires"-->
-
-            </article>
-			<section> <!--bloc "Activités"-->
+            <!--Bloc "Les plus populaires"-->
+            <section> 
+                <h2>Les plus populaires</h2>
+            </section>
+            <!--bloc "Activités"-->
+			<section> 
                 <h1 id="Activités">Activités à Marseille</h1> <!--Ajout id pour ancre header-->
 
 			</section>
