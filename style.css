@@ -1,8 +1,8 @@
 body {
     font-family: 'Raleway',Arial, Helvetica, sans-serif ;
     font-size: 100%;
-    /*max-width: 1440px;*/
-    margin: 0; 
+    max-width: 1440px;
+    margin: auto; 
     padding: 0px 50px;  
 }
 .head-top {
@@ -52,8 +52,7 @@ body {
     background-color: #F2F2F2;
     font-size: 20px;
     text-align: center;
-    padding-top: 13px;
-    border:2px solid #F2F2F2;
+    padding-top: 15px;
     border-radius: 15px 0px 0px 15px;
 }
 .barrerecherche input {
@@ -63,10 +62,7 @@ body {
     font-size: medium;
     font-weight: bold;
     color: black;
-    border-top: 2px solid #F2F2F2;
-    border-bottom: 2px solid #F2F2F2;
-    border-left: 2px solid #F2F2F2;
-    border-right: 2px solid #0065FC;
+    border: 2px solid #F2F2F2;    
 }
 .barrerecherche input::placeholder {
     color: black;
@@ -79,7 +75,7 @@ body {
     background-color: #0065FC;
     color: #FFFFFF;
     font-weight: bold;
-    border: 2px solid #0065FC;
+    border: none;
     border-radius: 0px 15px 15px 0px;
 }
 .barrerecherche button:hover {
@@ -92,11 +88,12 @@ body {
                                                                                                 /* bloc filtres*/
 .filtres {
     margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
 }
-.filtres h3{
+.linefilter {
+    display: flex;
+    flex-wrap: wrap;
+}
+.filtres h3 {
     font-weight: bold;
     font-size: 16px;
     margin-right: 32px;
@@ -126,7 +123,6 @@ body {
     position: relative; width: 192px;
     margin-right: 32px;
 }
-
 .onoffswitch-inner:before, .onoffswitch-inner:after {
     display: block; float: left; width: 50%; height: 50px; padding: 0; line-height: 50px;
     font-size: 16px; color: white; font-weight: bold;
@@ -261,15 +257,11 @@ body {
 .onoffswitch-checkbox4:checked + .onoffswitch-label4 .onoffswitch-switch4 {
     right: 0px; 
 }
-                                                                                                /*ligne info*/
-#ligneinfo
-{
-    
-    margin-top: 43px;
+#ligneinfo {
+     margin-top: 43px;
+     
 }
-#ligneinfo i
-{
-    
+#ligneinfo i {
     height: 22px;
     max-height: 22px;
     width: 26px;
@@ -284,41 +276,34 @@ body {
                                                                                                 /*fin ligne info*/
                                                                                                 /*fin bloc filtre*/
                                                                                                 /*bloc hébergement*/
-.hebergement div figure
-{
+.resultlien {
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0;
+    border: 4px solid black;
+    border-radius: 7%;
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 250px;
-    height: 200px;
-    border: 4px solid black;
-    border-radius: 20px;
-    overflow: hidden;
+    padding-bottom: 10px;
 }
-.hebergement div figure img
-{
-    
-    width: 100%;
-    height: auto;
-    
+.nomhotel {
+    margin: 0;
+    padding-left: 10px;
 }
-.hebergement div figure figcaption
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
-    font-size: medium;  
-    width: 100%;
-    max-height: 40%;
-    
-    background-color: #FFFFFF;
-    margin-left: 10px;
+.tarif {
+    font-weight: normal;
+    font-size: small;  
+    padding-left: 10px;
 }
-.rate 
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
+.bluestar {
+    font-size: small;
     color: #0065FC;
+    padding-left: 10px;
+}
+.greystar {
+    font-size: small;
+    color: #F2F2F2;
 }
