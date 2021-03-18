@@ -1,113 +1,264 @@
 <!DOCTYPE html>
-	<html lang="fr">
-		<head>
-			<meta charset="utf-8" />
-            <link rel="stylesheet" href="style.css" />
-            <link rel="preconnect" href="https://fonts.gstatic.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com">
-            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
-            <script src="https://kit.fontawesome.com/da14dfdb28.js" crossorigin="anonymous"></script>
-			<title>Reservia</title>
-		</head>
-		<body> 
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/da14dfdb28.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Reservia</title>
+	</head>
+	<body>
+		<header class="head-top">
+			<img src="image/logo/Reservia-3x.png" alt="logo " class="logo" />
+			<nav class="menu-top">
+				<a class="ancre" href="#Hébergements">Hébergements</a>
+				<a class="ancre" href="#Activités">Activités</a>
+				<a class="sign-in" href="#">S'inscrire</a>
+			</nav>
+		</header>
+		<main>
+			<!--Bloc "recherche"-->
+			<section class="search">
+				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+				<h2>En plein centre ville ou en pleine nature</h2>
+				<p class="barrerecherche">
+					<i class="fas fa-map-marker-alt"></i>
+					<input type="search" name="q" placeholder="Marseille, France" />
+					<button>Rechercher</button>
+				</p>
+			</section>
 
-            <header class="head-top">
-                <img src="image/logo/Reservia-3x.png" alt="logo " class="logo" />
-                <nav class="menu-top">
-                        <a class="ancre" href="#hebergements">Hébergements</a>
-                        <a class="ancre" href="#activites">Activités</a>
-                        <a class="sign-in" href="#">S'inscrire</a>  
-                </nav>              	
-            </header>
-            <main>
-                <!--Bloc "recherche"-->
-                <section class="recherche"> 
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
-                    <p class="barrerecherche">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <input type="search"  name="q" placeholder="Marseille, France">
-                        <button>Rechercher</button>
-                    </p>
-                </section>
+			<!--bouton de filtre realiser sur le site https://proto.io/freebies/onoff/-->
+			<section class="filtres">
+				<div class="linefilter">
+					<p class="firstinlinefilter">Filtres</p>
+					<div class="onoffswitch">
+						<input
+							type="checkbox"
+							name="onoffswitch"
+							class="onoffswitch-checkbox"
+							id="myonoffswitch"
+							tabindex="0"
+						/>
+						<label class="onoffswitch-label" for="myonoffswitch">
+							<span class="onoffswitch-inner"></span>
+							<span class="onoffswitch-switch" id="iconefiltre"
+								><i class="fas fa-money-bill-wave"></i
+							></span>
+						</label>
+					</div>
+					<div class="onoffswitch2">
+						<input
+							type="checkbox"
+							name="onoffswitch2"
+							class="onoffswitch-checkbox2"
+							id="myonoffswitch2"
+							tabindex="0"
+						/>
+						<label class="onoffswitch-label2" for="myonoffswitch2">
+							<span class="onoffswitch-inner2"></span>
+							<span class="onoffswitch-switch2" id="iconefiltre2"
+								><i class="fas fa-child"></i
+							></span>
+						</label>
+					</div>
+					<div class="onoffswitch3">
+						<input
+							type="checkbox"
+							name="onoffswitch3"
+							class="onoffswitch-checkbox3"
+							id="myonoffswitch3"
+							tabindex="0"
+						/>
+						<label class="onoffswitch-label3" for="myonoffswitch3">
+							<span class="onoffswitch-inner3"></span>
+							<span class="onoffswitch-switch3" id="iconefiltre3"
+								><i class="fas fa-heart"></i
+							></span>
+						</label>
+					</div>
+					<div class="onoffswitch4">
+						<input
+							type="checkbox"
+							name="onoffswitch4"
+							class="onoffswitch-checkbox4"
+							id="myonoffswitch4"
+							tabindex="0"
+						/>
+						<label class="onoffswitch-label4" for="myonoffswitch4">
+							<span class="onoffswitch-inner4"></span>
+							<span class="onoffswitch-switch4" id="iconefiltre4"
+								><i class="fas fa-dog"></i
+							></span>
+						</label>
+					</div>
+				</div>
+				<h3 id="ligneinfo">
+					<i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans
+					cette ville
+				</h3>
+			</section>
 
-                <!--bouton de filtre realiser sur le site https://proto.io/freebies/onoff/-->
-                <section class="filtres">
-                    <div class="linefilter">
-                        <h3>Filtres</h3>
-                        <div class="onoffswitch">
-                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0">
-                            <label class="onoffswitch-label" for="myonoffswitch">
-                                <span class="onoffswitch-inner"></span>
-                                <span class="onoffswitch-switch" id="iconefiltre"><i class="fas fa-money-bill-wave" ></i></span>
-                            </label>
-                        </div>
-                        <div class="onoffswitch2">
-                            <input type="checkbox" name="onoffswitch2" class="onoffswitch-checkbox2" id="myonoffswitch2" tabindex="0">
-                            <label class="onoffswitch-label2" for="myonoffswitch2">
-                                <span class="onoffswitch-inner2"></span>
-                                <span class="onoffswitch-switch2" id="iconefiltre2"><i class="fas fa-child"></i></span>
-                            </label>
-                        </div>
-                        <div class="onoffswitch3">
-                            <input type="checkbox" name="onoffswitch3" class="onoffswitch-checkbox3" id="myonoffswitch3" tabindex="0">
-                            <label class="onoffswitch-label3" for="myonoffswitch3">
-                                <span class="onoffswitch-inner3"></span>
-                                <span class="onoffswitch-switch3" id="iconefiltre3"><i class="fas fa-heart"></i></span>
-                            </label>
-                        </div>
-                        <div class="onoffswitch4">
-                            <input type="checkbox" name="onoffswitch4" class="onoffswitch-checkbox4" id="myonoffswitch4" tabindex="0">
-                            <label class="onoffswitch-label4" for="myonoffswitch4">
-                                <span class="onoffswitch-inner4"></span>
-                                <span class="onoffswitch-switch4" id="iconefiltre4"><i class="fas fa-dog"></i></span>
-                            </label>
-                        </div>
-                    </div> 
-                    <p id="ligneinfo"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
-                </section>  
+			<!--Bloc "Hébergements"-->
+			<section class="hebergement">
+				<!--Ajout id pour ancre header-->
 
-                <!--Bloc "Hébergements"-->
-			    <section class="hebergement">
-                    <div>
-                        <h1 id="Hébergements">Hébergements à Marseille</h1> <!--Ajout id pour ancre header-->  
-                        <article class="result">
-                            <a class="resultlien" href="#">
-                                <div>
-                                    <img src="image/hébergement/aubergelacannebiere.jpg" alt="Auberge la Cannebière">
-                                </div>
-                                <div><h4 class="nomhotel"> Auberge la Cannebière</h4></div>
-                                <div class="tarif">Nuit à partir de <strong>25€</strong></div>
-                                <div>
-                                    <span class="bluestar">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </span>
-                                    <span class="greystar">
-                                        <i class="fas fa-star"></i>
-                                    </span>
-                                </div>
-                            </a>
-                        </article>
-                    </div>
-           
-                
+				<h3 class="hebergementhead" id="Hébergements">
+					Hébergements à Marseille
+				</h3>
 
-			    </section>
-                <!--Bloc "Les plus populaires"-->
-                <section> 
-                    <h2>Les plus populaires</h2>
-                </section>
-                <!--bloc "Activités"-->
-			    <section> 
-                    <h1 id="Activités">Activités à Marseille</h1> <!--Ajout id pour ancre header-->
+				<article class="result">
+					<a class="resultlien" href="#">
+						<div>
+							<img
+								class="hebergementimagesize"
+								src="image/hébergement/aubergelacannebiere.jpg"
+								alt="Auberge la Cannebière"
+							/>
+						</div>
+						<div class="hebergementtextsize">
+							<h4 class="nomhotel">Auberge la Cannebière</h4>
+							<span class="tarif">Nuit à partir de <strong>25€</strong></span>
+							<span class="hebergementstar">
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star greystar"></i>
+							</span>
+						</div>
+					</a>
+				</article>
+				<article class="result">
+					<a class="resultlien" href="#">
+						<div>
+							<img
+								class="hebergementimagesize"
+								src="image/hébergement/hotelduport.jpg"
+								alt="Hôtel du port"
+							/>
+						</div>
+						<div class="hebergementtextsize">
+							<h4 class="nomhotel">Hôtel du port</h4>
+							<span class="tarif">Nuit à partir de <strong>52€</strong></span>
+							<span class="hebergementstar">
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+							</span>
+						</div>
+					</a>
+				</article>
+				<article class="result">
+					<a class="resultlien" href="#">
+						<div>
+							<img
+								class="hebergementimagesize"
+								src="image/hébergement/hotellesmouettes.jpg"
+								alt="Hôtel Les mouettes"
+							/>
+						</div>
+						<div class="hebergementtextsize">
+							<h4 class="nomhotel">Hôtel Les mouettes</h4>
+							<span class="tarif">Nuit à partir de <strong>76€</strong></span>
+							<span class="hebergementstar">
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star greystar"></i>
+							</span>
+						</div>
+					</a>
+				</article>
+				<article class="result">
+					<a class="resultlien" href="#">
+						<div>
+							<img
+								class="hebergementimagesize"
+								src="image/hébergement/hoteldelamer.jpg"
+								alt="Hôtel de la mer"
+							/>
+						</div>
+						<div class="hebergementtextsize">
+							<h4 class="nomhotel">Hôtel de la mer</h4>
+							<span class="tarif">Nuit à partir de <strong>46€</strong></span>
+							<span class="hebergementstar">
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star greystar"></i>
+								<i class="fas fa-star greystar"></i>
+							</span>
+						</div>
+					</a>
+				</article>
+				<article class="result">
+					<a class="resultlien" href="#">
+						<div>
+							<img
+								class="hebergementimagesize"
+								src="image/hébergement/aubergelepanier.jpg"
+								alt="Auberge Le Panier"
+							/>
+						</div>
+						<div class="hebergementtextsize">
+							<h4 class="nomhotel">Auberge Le Panier</h4>
+							<span class="tarif">Nuit à partir de <strong>23€</strong></span>
+							<span class="hebergementstar">
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star greystar"></i>
+							</span>
+						</div>
+					</a>
+				</article>
+				<article class="result">
+					<a class="resultlien" href="#">
+						<div>
+							<img
+								class="hebergementimagesize"
+								src="image/hébergement/hotelchezamina.jpg"
+								alt="Hôtel chez Amina"
+							/>
+						</div>
+						<div class="hebergementtextsize">
+							<h4 class="nomhotel">Hôtel chez Amina</h4>
+							<span class="tarif">Nuit à partir de <strong>96€</strong></span>
+							<span class="hebergementstar">
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+								<i class="fas fa-star bluestar"></i>
+							</span>
+						</div>
+					</a>
+				</article>
 
-			    </section>
-            </main>
-			<footer>
-
-			</footer>
-		</body>
-	</html>
+				<a class="searchmorelink" href="#">Afficher plus</a>
+			</section>
+			<!--Bloc "Les plus populaires"-->
+			<section>
+				<h2>Les plus populaires</h2>
+			</section>
+			<!--bloc "Activités"-->
+			<section>
+				<h1 id="Activités">Activités à Marseille</h1>
+				<!--Ajout id pour ancre header-->
+			</section>
+		</main>
+		<footer></footer>
+	</body>
+</html>
