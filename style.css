@@ -1,6 +1,5 @@
 body {
 	font-family: "Raleway", Arial, Helvetica, sans-serif;
-
 	max-width: 1440px;
 	margin: auto;
 }
@@ -10,10 +9,8 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	height: 130px;
-
 	margin-left: 50px;
 	margin-right: 50px;
-
 }
 .menu-top {
 	display: flex;
@@ -39,13 +36,9 @@ body {
 	color: #0065fc;
 	padding-left: 34px;
 	padding-top: 34px;
-
 }
 .sign-in:hover {
 	text-decoration: underline;
-}
-/* bloc recherche */
-	transition: all 0.3s;
 }
 .sign-in:hover {
 	text-decoration: underline;
@@ -100,231 +93,6 @@ body {
 	font-weight: bold;
 	border: none;
 	border-radius: 0px 15px 15px 0px;
-	transition: all 0.2s;
-}
-.searchbar button:hover {
-	cursor: pointer;
-	box-shadow: inset 3px 3px 3px black;
-	transform: scale(0.98);
-}
-/* fin bloc recherche */
-/* bloc filtres*/
-.filters {
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	flex-wrap: wrap;
-}
-.linetittle {
-	display: flex;
-	align-items: center;
-	margin-top: 30px;
-	margin-bottom: 40px;
-}
-.filtersbar1 {
-	width: 190px;
-}
-.filtersname1 {
-	width: 140px;
-}
-.filtersbar2 {
-	width: 147px;
-}
-.filtersname2 {
-	width: 97px;
-}
-.filtersbar3 {
-	width: 180px;
-}
-.filtersname3 {
-	width: 130px;
-}
-.filtersbar4 {
-	width: 238px;
-}
-.filtersname4 {
-	width: 188px;
-}
-.filtersbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-left: 32px;
-	margin-bottom: 40px;
-	margin-top: 30px;
-	height: 48px;
-	border: 2px solid #f2f2f2;
-	border-left: none;
-	border-radius: 25px;
-}
-.filtersbar:link {
-	text-decoration: none;
-	color: black;
-}
-.filtersbar:visited {
-	color: black;
-}
-.filtersicon:hover {
-	color: #deebff;
-	transform: rotateZ(360deg);
-	background-color: #0065fc;
-	transition: all 0.5s;
-}
-.filtersicon {
-	background-color: #deebff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #0065fc;
-	height: 50px;
-	width: 50px;
-	text-align: center;
-	font-size: 20px;
-	border-radius: 50%;
-}
-
-.filtersname {
-	display: flex;
-	justify-content: center;
-	font-weight: bold;
-}
-
-#ligneinfo {
-	margin-top: 43px;
-	margin-bottom: 40px;
-	font-weight: normal;
-	font-size: 16px;
-}
-#ligneinfo i {
-	height: 22px;
-	max-height: 22px;
-	width: 26px;
-	max-width: 26px;
-	text-align: center;
-	color: #0065fc;
-	border: 2px solid #f2f2f2;
-	border-radius: 50%;
-	margin-right: 18px;
-	padding-top: 5px;
-}
-.infoline {
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	width: 100%;
-	height: 50px;
-}
-.infoicon {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 20px;
-	height: 20px;
-	margin-right: 10px;
-	font-size: small;
-	color: #0065fc;
-	border: 2px solid #f2f2f2;
-	border-radius: 10px;
-}
-.infotext {
-	font-weight: normal;
-	font-size: medium;
-}
-/*fin bloc filtre*/
-/*bloc hébergement*/
-.hebergement {
-	width: 880px;
-	height: 630px;
-	background-color: #f2f2f2;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 40px 40px 0px 40px;
-	border-radius: 3%;
-	margin-top: 40px;
-}
-.hebergementhead {
-	width: 80%;
-	height: 20px;
-	font-size: large;
-	margin: 0;
-}
-.result {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	width: 250px;
-	height: 200px;
-	overflow: hidden;
-	margin: 0;
-	border: 4px solid #ffffff;
-	border-radius: 7%;
-	transition: all 0.2s;
-}
-.resultlien {
-	text-decoration: none;
-}
-.resultlien:link {
-	color: black;
-}
-.result:hover {
-	transform: scale(1.1);
-	box-shadow: 3px 3px 5px black;
-}
-.resultlien:visited {
-	color: black;
-}
-.hebergementimagesize {
-	width: 100%;
-	height: 120px;
-	object-fit: cover;
-	margin-bottom: -5px;
-}
-.hebergementtextsize {
-	height: 80px;
-	width: 100%;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	background-color: #ffffff;
-}
-.nomhotel {
-	margin: 0;
-	padding-left: 10px;
-}
-.tarif {
-	font-weight: normal;
-	font-size: medium;
-	padding-left: 10px;
-}
-.hebergementstar {
-	padding-left: 10px;
-}
-.bluestar {
-	font-size: medium;
-	color: #0065fc;
-}
-.greystar {
-	font-size: medium;
-	color: #f2f2f2;
-}
-.searchmore {
-	vertical-align: middle;
-	margin-top: 10px;
-	display: inline;
-}
-.searchmorelink {
-	height: 20px;
-	text-decoration: none;
-	font-size: 16px;
-	font-weight: bold;
-	width: 20%;
-}
-
-.searchmorelink:visited {
-	color: black;
 	transition: all 0.2s;
 }
 .searchbar button:hover {
@@ -627,7 +395,4 @@ body {
 .popresult:hover {
 	transform: scale(1.1);
 	box-shadow: 3px 3px 5px black;
-}
-.searchmorelink:hover {
-	color: #0065fc;
 }
