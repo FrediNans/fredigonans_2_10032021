@@ -1,8 +1,7 @@
 body {
 	font-family: "Raleway", Arial, Helvetica, sans-serif;
-	max-width: 1440px;
 	margin: auto;
-}
+} /*
 .head-top {
 	display: flex;
 	flex-direction: row;
@@ -45,7 +44,7 @@ body {
 	transform: scale(1.1);
 	text-shadow: rgb(194, 203, 212) 5px 5px;
 }
-/* bloc recherche */
+/* bloc recherche */ /*
 .search {
 	margin-left: 50px;
 }
@@ -101,7 +100,7 @@ body {
 	transform: scale(0.98);
 }
 /* fin bloc recherche */
-/* bloc filtres*/
+/* bloc filtres*/ /*
 .filters {
 	display: flex;
 	justify-content: left;
@@ -206,7 +205,7 @@ body {
 	font-size: medium;
 }
 /*fin bloc filtre*/
-/*bloc hébergement*/
+/*bloc hébergement*/ /*
 .hebergementglobalbox {
 	display: flex;
 	flex-direction: row;
@@ -330,7 +329,7 @@ body {
 	transform: scale(1.1);
 	text-shadow: rgb(99, 96, 96) 5px 5px;
 }
-/*bloc populaire*/
+/*bloc populaire*/ /*
 .lespluspopulaires {
 	width: 420px;
 	height: 630px;
@@ -396,3 +395,4 @@ body {
 	transform: scale(1.1);
 	box-shadow: 3px 3px 5px black;
 }
+*/
