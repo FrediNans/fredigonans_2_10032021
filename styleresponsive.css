@@ -555,6 +555,9 @@ h2 {
 		margin: 0;
 		transition: all 0.3s;
 	}
+	.search-more-link:link {
+		color: #000000;
+	}
 	.search-more-link:hover {
 		transform: scale(1.1);
 		color: #0065fc;
