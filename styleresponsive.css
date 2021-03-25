@@ -4,7 +4,7 @@ body {
 	font-size: 16px;
 	margin: auto;
 }
-/*header start*/
+/* header start */
 header {
 	margin: 1.875rem 1.25rem;
 }
@@ -49,7 +49,7 @@ h2 {
 	font-size: 1rem;
 	font-weight: normal;
 }
-/*breakpoint pad*/
+/* breakpoint pad */
 @media screen and (min-width: 594px) {
 	nav {
 		flex-direction: row;
@@ -69,7 +69,7 @@ h2 {
 		border-bottom: none;
 	}
 }
-/*breakpoint desktop*/
+/* breakpoint desktop */
 @media screen and (min-width: 900px) {
 	header {
 		margin: 3.125rem 3.125rem 0 3.125rem;
@@ -115,8 +115,8 @@ h2 {
 		font-size: 1rem;
 	}
 }
-/*header end*/
-/*search bar start*/
+/* header end */
+/* "search" bar start */
 .search-bar {
 	display: flex;
 	justify-content: center;
@@ -166,14 +166,14 @@ h2 {
 .desktop-button {
 	display: none;
 }
-/*breakpoint pad*/
+/* breakpoint pad */
 @media screen and (min-width: 594px) {
 	.search-bar {
 		width: 60%;
 		margin: auto;
 	}
 }
-/*breakpoint desktop*/
+/* breakpoint desktop */
 @media screen and (min-width: 900px) {
 	.search-bar {
 		margin: 2rem 0 0 3.125rem;
@@ -212,8 +212,8 @@ h2 {
 		transform: scale(0.98);
 	}
 }
-/*search bar end*/
-/*filters start*/
+/* "search" bar end */
+/* "filters" box start */
 .filters-box {
 	display: flex;
 	align-items: center;
@@ -293,29 +293,33 @@ h2 {
 	justify-content: left;
 	align-items: center;
 	width: 100%;
-	height: 50px;
+	height: 3.125rem;
 }
 .info-icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 1.25rem;
-	height: 1.25rem;
+	/* use min-height and min-width otherwise the circle 
+	is deformed in small resolution */
+	min-width: 1.25rem;
+	min-height: 1.25rem;
 	margin-right: 10px;
 	font-size: small;
 	color: #0065fc;
 	border: 2px solid #f2f2f2;
-	border-radius: 0.625rem;
+	border-radius: 50%;
 }
 .info-text {
 	font-weight: normal;
 	font-size: 1rem;
 }
+/* breakpoint pad */
 @media screen and (min-width: 594px) {
 	.filters-bar3 {
 		margin-left: 1rem;
 	}
 }
+/* breakpoint desktop */
 @media screen and (min-width: 1000px) {
 	.filters-box {
 		justify-content: flex-start;
@@ -342,8 +346,8 @@ h2 {
 		margin-top: 1.875rem;
 	}
 }
-/*filters end*/
-/*"les plus populaires" start*/
+/* "filters" box end*/
+/* "popular" box start */
 .popular-box {
 	display: flex;
 	flex-direction: column;
@@ -412,8 +416,8 @@ h2 {
 .greystar {
 	color: #f2f2f2;
 }
-/*"les plus populaires" end*/
-/*"hebergement" start*/
+/* "popular" box  end */
+/* "rental" box  start */
 .rental-box {
 	display: flex;
 	flex-direction: column;
@@ -467,14 +471,17 @@ h2 {
 .search-more-link:visited {
 	color: black;
 }
+/* breakpoint pad */
 @media screen and (min-width: 594px) {
 	.popular-thumbnail-link {
-		margin-left: 10%;
-		margin-right: 10%;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.rental-thumbnail-link {
-		margin-left: 10%;
-		margin-right: 10%;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.rental-head {
 		width: 90%;
@@ -483,17 +490,12 @@ h2 {
 		width: 90%;
 	}
 }
+/* breakpoint pad/desktop */
 @media screen and (min-width: 800px) {
 	.popular-thumbnail-link {
 		margin-right: 15%;
 		margin-left: 15%;
 	}
-	.rental-thumbnail-link {
-		margin-right: 15%;
-		margin-left: 15%;
-	}
-}
-@media screen and (min-width: 900px) {
 	.filters-box {
 		justify-content: left;
 		margin-left: 3.125rem;
@@ -510,18 +512,17 @@ h2 {
 		width: 90%;
 	}
 	.rental-box {
+		display: flex;
 		flex-direction: row;
+		justify-content: space-around;
 		flex-wrap: wrap;
 	}
-	.rental-head {
-		width: 90%;
-	}
 	.rental-thumbnail-link {
-		margin: 0 auto 0.652rem auto;
-		width: 40%;
+		width: 45%;
 	}
 }
-@media screen and (min-width: 1073px) {
+/* breakpoint desktop */
+@media screen and (min-width: 1000px) {
 	.rental-global-box {
 		margin-top: 2.5rem;
 		display: flex;
@@ -585,7 +586,11 @@ h2 {
 		width: auto;
 	}
 }
-/*activitie box*/
+/* "rental"box end */
+/* "activities" box start */
+.activities-box {
+	margin-bottom: 3.125rem;
+}
 .activities-thumbnail-phone {
 	display: flex;
 	flex-direction: column;
@@ -593,7 +598,6 @@ h2 {
 	height: 11.875rem;
 	margin-left: 1.25rem;
 	margin-right: 1.25rem;
-	border: 4px solid white;
 	border-radius: 15px;
 	box-shadow: 1px 1px 8px #f2f2f2;
 	margin-bottom: 0.625rem;
@@ -619,36 +623,167 @@ h2 {
 	color: black;
 }
 .activities-location {
-	margin-left: 1.25rem;
+	margin: auto auto auto 1.25rem;
 }
 .activities-head {
+	margin-top: 2.5rem;
 	margin-left: 1.25rem;
+	margin-right: 1.25rem;
+	font-size: 1.5rem;
 }
+/*breakpoint pad*/
 @media screen and (min-width: 594px) {
 	.activities-thumbnail-phone {
 		margin-left: 10%;
 		margin-right: 10%;
 	}
 	.activities-head {
-		width: 90%;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
+/*breakpoint pad/desktop*/
 @media screen and (min-width: 800px) {
+	.activities-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-content: space-around;
+		flex-wrap: wrap;
+		height: 37.5rem;
+	}
 	.activities-thumbnail-phone {
-		margin-left: 15%;
-		margin-right: 15%;
+		width: 45%;
+		margin: 0 auto 0.625rem auto;
+	}
+	.c2 {
+		width: 45%;
+	}
+	.activities-thumbnail-link-2 {
+		width: auto;
+	}
+	.activities-thumbnail-link-3 {
+		width: auto;
+	}
+	.c4 {
+		width: 45%;
+	}
+	.activities-thumbnail-link-5 {
+		width: auto;
+	}
+	.activities-thumbnail-link-6 {
+		width: auto;
+	}
+}
+/*breakpoint desktop*/
+@media screen and (min-width: 1000px) {
+	.activities-box {
+		max-height: 29.813rem;
+		justify-content: space-between;
+		align-content: space-between;
+		flex-direction: column;
+		margin-left: 3.472%;
+		margin-right: 3.472%;
+	}
+	.activities-thumbnail-phone {
+		margin: 0;
+	}
+	.activities-thumbnail-link-1 {
+		height: 27.813rem;
+		width: 22.588%;
+	}
+	.activities-thumbnail-link-2 {
+		height: 14.875rem;
+		width: auto;
+	}
+	.activities-thumbnail-link-3 {
+		height: 10.313rem;
+		width: auto;
+	}
+	.activities-thumbnail-link-4 {
+		height: 27.813rem;
+		width: 22.588%;
+	}
+	.activities-thumbnail-link-5 {
+		width: auto;
+	}
+	.activities-thumbnail-link-6 {
+		width: auto;
+	}
+	/*contains thumbnails 2 and 3*/
+	.c2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 27.813rem;
+		width: 22.588%;
+	}
+	/*contains thumbnails 5 and 6*/
+	.c4 {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 27.813rem;
+		width: 22.588%;
+	}
+}
+/*activities box end*/
+/* footer */
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: #f2f2f2;
+	padding-bottom: 2.125rem;
+}
+footer aside {
+	display: flex;
+	flex-direction: column;
+	padding-right: 1.25rem;
+	padding-left: 1.25rem;
+}
+footer p {
+	font-weight: bold;
+	margin-top: 3.125rem;
+	margin-bottom: 1.5rem;
+}
+footer a {
+	margin-bottom: 1rem;
+	text-decoration: none;
+	color: #000000;
+}
+footer a:visited {
+	color: #000000;
+}
+@media screen and (min-width: 594px) {
+	footer {
+		flex-direction: row;
 	}
 }
 @media screen and (min-width: 900px) {
-	.activities-box {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		height: 39rem;
+	footer {
+		justify-content: space-between;
+		padding-right: 25.694%;
+		padding-left: 3.125rem;
 	}
-	.activities-thumbnail-phone {
-		width: 40%;
-		margin: 0 auto 0.625rem auto;
+	footer aside {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@media screen and (min-width: 1500px) {
+	html {
+		font-size: 18px;
+	}
+}
+@media screen and (min-width: 1600px) {
+	html {
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 1700px) {
+	html {
+		font-size: 22px;
 	}
 }
