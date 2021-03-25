@@ -32,12 +32,15 @@
 			<h2>En plein centre ville ou en pleine nature</h2>
 		</header>
 		<main>
+			<!-- "search" box start-->
 			<div class="search-bar">
 				<div class="icon1"><i class="fas fa-map-marker-alt"></i></div>
 				<input type="search" name="q" placeholder="Marseille, France" />
 				<button class="search-button"><i class="fas fa-search"></i></button>
 				<button class="desktop-button">Recherche</button>
 			</div>
+			<!-- "search" box end -->
+			<!-- "filters" box start -->
 			<section class="filters-box">
 				<div class="line-tittle">
 					<p><strong>Filtres</strong></p>
@@ -76,6 +79,8 @@
 						</div>
 					</a>
 				</div>
+				<!-- "filters" box end -->
+				<!-- "info" line start-->
 				<div class="info-line">
 					<div class="info-icon"><i class="fas fa-info"></i></div>
 					<div>
@@ -85,8 +90,9 @@
 					</div>
 				</div>
 			</section>
-			<!--Bloc "Les plus populaires"-->
-			<section class="rental-global-box">
+			<!-- "info" line end -->
+			<!-- "popular" box start -->
+			<div class="rental-global-box">
 				<article class="popular-box">
 					<div class="popular-head">
 						<div>Les plus populaires</div>
@@ -147,7 +153,8 @@
 						</div>
 					</a>
 				</article>
-				<!--Bloc "Hébergements"-->
+				<!-- "popular" box end -->
+				<!-- "rental" box start -->
 				<article class="rental-box">
 					<h3 class="rental-head" id="Hébergements">
 						Hébergements à Marseille
@@ -262,10 +269,11 @@
 					</a>
 					<a class="search-more-link" href="#">Afficher plus</a>
 				</article>
-			</section>
-			<!--bloc "Activités"-->
+			</div>
+			<!-- "rental" box end -->
+			<!-- "activities" box start -->
+			<h3 class="activities-head" id="Activités">Activités à Marseille</h3>
 			<article class="activities-box">
-				<h3 class="activities-head" id="Activités">Activités à Marseille</h3>
 				<a
 					class="activities-thumbnail-link-1 activities-thumbnail-phone"
 					href="#"
@@ -275,38 +283,40 @@
 						src="image/activités/vieuxport.jpg"
 						alt="Vieux Port"
 					/>
-					<div class="activities-text-size1">
+					<div class="activities-text-size">
 						<h4 class="activities-location">Vieux Port</h4>
 					</div>
 				</a>
+				<div class="c2">
+					<a
+						class="activities-thumbnail-link-2 activities-thumbnail-phone"
+						href="#"
+					>
+						<img
+							class="activities-image-size"
+							src="image/activités/fortdepomegues.jpg"
+							alt="Fort de Pomègues"
+						/>
+						<div class="activities-text-size">
+							<h4 class="activities-location">Fort de Pomègues</h4>
+						</div>
+					</a>
+					<a
+						class="activities-thumbnail-link-3 activities-thumbnail-phone"
+						href="#"
+					>
+						<img
+							class="activities-image-size"
+							src="image/activités/ilesdufrioul.jpg"
+							alt="Îles du Frioul"
+						/>
+						<div class="activities-text-size">
+							<h4 class="activities-location">Îles du Frioul</h4>
+						</div>
+					</a>
+				</div>
 				<a
-					class="activities-thumbnail-link2 activities-thumbnail-phone"
-					href="#"
-				>
-					<img
-						class="activities-image-size"
-						src="image/activités/fortdepomegues.jpg"
-						alt="Fort de Pomègues"
-					/>
-					<div class="activities-text-size">
-						<h4 class="activities-location">Fort de Pomègues</h4>
-					</div>
-				</a>
-				<a
-					class="activities-thumbnail-link3 activities-thumbnail-phone"
-					href="#"
-				>
-					<img
-						class="activities-image-size"
-						src="image/activités/ilesdufrioul.jpg"
-						alt="Îles du Frioul"
-					/>
-					<div class="activities-text-size">
-						<h4 class="activities-location">Îles du Frioul</h4>
-					</div>
-				</a>
-				<a
-					class="activities-thumbnail-link1 activities-thumbnail-phone"
+					class="activities-thumbnail-link-4 activities-thumbnail-phone"
 					href="#"
 					><img
 						class="activities-image-size"
@@ -317,34 +327,54 @@
 						<h4 class="activities-location">Parc National des Calanques</h4>
 					</div>
 				</a>
-				<a
-					class="activities-thumbnail-link4 activities-thumbnail-phone"
-					href="#"
-				>
-					<img
-						class="activities-image-size"
-						src="image/activités/notredamedelagarde.jpg"
-						alt="Notre-Dame-de-la-Garde"
-					/>
-					<div class="activities-text-size">
-						<h4 class="activities-location">Notre-Dame-de-la-Garde</h4>
-					</div>
-				</a>
-				<a
-					class="activities-thumbnail-link4 activities-thumbnail-phone"
-					href="#"
-				>
-					<img
-						class="activities-image-size"
-						src="image/activités/parclongchamps.jpg"
-						alt="Parc Longchamp"
-					/>
-					<div class="activities-text-size">
-						<h4 class="activities-location">Parc Longchamp</h4>
-					</div>
-				</a>
+				<div class="c4">
+					<a
+						class="activities-thumbnail-link-5 activities-thumbnail-phone"
+						href="#"
+					>
+						<img
+							class="activities-image-size"
+							src="image/activités/notredamedelagarde.jpg"
+							alt="Notre-Dame-de-la-Garde"
+						/>
+						<div class="activities-text-size">
+							<h4 class="activities-location">Notre-Dame-de-la-Garde</h4>
+						</div>
+					</a>
+					<a
+						class="activities-thumbnail-link-6 activities-thumbnail-phone"
+						href="#"
+					>
+						<img
+							class="activities-image-size"
+							src="image/activités/parclongchamps.jpg"
+							alt="Parc Longchamp"
+						/>
+						<div class="activities-text-size">
+							<h4 class="activities-location">Parc Longchamp</h4>
+						</div>
+					</a>
+				</div>
 			</article>
+			<!-- "activities" box end -->
 		</main>
-		<footer></footer>
+		<footer>
+			<aside>
+				<p>A propos</p>
+				<a href="#">Fonctionnement du site</a>
+				<a href="#">Conditions générales de ventes</a>
+				<a href="#">Données et confidentialités</a>
+			</aside>
+			<aside>
+				<p>Nos Hébergements</p>
+				<a href="#">Charte qualité</a>
+				<a href="#">Soumettre votre hôtel</a>
+			</aside>
+			<aside>
+				<p>Assistance</p>
+				<a href="#">Centre d'aide</a>
+				<a href="#">Nous contacter</a>
+			</aside>
+		</footer>
 	</body>
 </html>
